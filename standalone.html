@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Tic Tac Toe</title>
+
+    <!-- Self styling -->
+    <style>
+      button {
+        background-color: #0c80f3;
+        border: 6px solid #0ff166;
+        border-radius: 10px;
+      }
+      .game-board {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: #34495e;
+        color: rgb(204, 28, 28);
+        border: 6px solid #0b0d0f;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .grid-row {
+        border: 6px solid #739dc7;
+        border-radius: 6px;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 4em;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(175, 70, 70);
+      }
+      .block {
+        background-color: rgb(219, 28, 28);
+        border: 6px solid green;
+        border-radius: 6px;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 20em;
+      }
+    </style>
+
+    <!-- BOOTSTRAP CSS ONLY -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+     
+
+    <!-- TRANSPILER: don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>React Tic Tac Toe</h1>
+    <!-- TARGET DIV: we will put our teact component inside this div -->
+    <div id="root"></div>
+
+    <!-- LIBRARIES: load react -->
+    <script
+      src="https://unpkg.com/react/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- SCRIPT TAG: load our react component. -->
+    <script src="colorGame00.jsx" defer type="text/babel"></script>
+  </body>
+</html>
