@@ -1,4 +1,4 @@
-<h1><img src="fetch.jpg" alt="Tic-Tac-Toe Project" width="20%"></h1>
+<h1><img src="ttt.jpg" alt="Tic-Tac-Toe Project" width="20%"></h1>
 
 
 # Tic-Tak-Toe Project
@@ -8,17 +8,17 @@ This project was part of the course work required in the MIT xPRO Full-Stack dev
 
 ## Description
 
-A basic project to fetch and render data using API's. The project will make use of useEffect and well as useReducer to be able to fetch data from an API. It will then use pagination to be able to render that data in a user friendly interface.
+A basic project to create a Tic Tac Toe game. This uses components within React.
 
 ### Features
 
-* Search bar to search any terms which will return the applicable articles.
-* A page size bar which allows you to adjust the size of the page specifying that by number of articles per page
-* Pagination represented by buttons below the search results
+* A board which has 9 squares
+* Each player gets a turn, there will be an X and an O player. When the player clicks on a square it will mark it with the players respective symbol.
+* There will be live results as well as an indicator on whose turn it is to play
 
 ## Installation
 
-Clone the files that are in the Data-Fetcher directory to your local machine.
+Clone the files that are in the Tic-Tac_Toe directory to your local machine.
 A local server is needed to run the test React applications.
 To do this complete the following steps:
 - Download Live Server extension in VS code OR
@@ -30,15 +30,15 @@ To do this complete the following steps:
 - To quit the application you can use `Ctrl + c`
 
 ### Expected outcomes:
-Access to information at your fingertips.
+An interactive game that can be played between two players.
 
 ## Support
 
-If by some unexpected circumstance the data stops rendering, please get hold of me at gman.international@gmail.com and I will make it all right again.
+If by some unexpected circumstance the tic's stop tac'ing and toe'ing, please get hold of me at gman.international@gmail.com and I will make it all right again.
 
-## Roadmap
+## Roadmap of Future Improvements
 
-Oh we have so many places to go... 
+- Add a 'Clear' button on the main board so that when it is pressed the game score as well as the marking in each block as well as the colors are reset to their original values.
 
 ## Versioning
 

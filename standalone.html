@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +8,8 @@
     <!-- Self styling -->
     <style>
       button {
-        background-color: #0c80f3;
-        border: 6px solid #0ff166;
+        background-color: rgb(255, 173, 173);
+        border: 6px solid rgb(255, 255, 252);
         border-radius: 10px;
       }
       .game-board {
@@ -18,16 +17,17 @@
         height: 600px;
         margin: 0 auto;
         background-color: #34495e;
-        color: rgb(204, 28, 28);
+        color: rgb(253, 255, 182);
         border: 6px solid #0b0d0f;
         border-radius: 10px;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        text-align: center;
       }
 
       .grid-row {
-        border: 6px solid #739dc7;
+        border: 6px solid rgb(160, 196, 255);
         border-radius: 6px;
         font-family: Helvetica;
         font-weight: bold;
@@ -44,6 +44,14 @@
         font-family: Helvetica;
         font-weight: bold;
         font-size: 20em;
+      
+      }
+      .red {
+        color: red;
+      }
+
+      .black {
+        color: black;
       }
     </style>
 
@@ -54,13 +62,12 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-     
 
     <!-- TRANSPILER: don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <h1>React Tic Tac Toe</h1>
+    <h1 style="text-align: center;">React Tic Tac Toe</h1>
     <!-- TARGET DIV: we will put our teact component inside this div -->
     <div id="root"></div>
 
@@ -75,6 +82,6 @@
     ></script>
 
     <!-- SCRIPT TAG: load our react component. -->
-    <script src="colorGame00.jsx" defer type="text/babel"></script>
+    <script src="ttt.jsx" defer type="text/babel"></script>
   </body>
 </html>
